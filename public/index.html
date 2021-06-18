@@ -11,7 +11,23 @@
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <style>
-      #root{ background: url(/hood.jpg);}
+      #root{ height: 100vh;
+        background: url(/ptbc-bg.png) no-repeat center bottom fixed; 
+        background-position: center bottom;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        color: #5d430e;
+        padding-top: 40px;
+      }
+      .MuiButton-containedSecondary {
+        color: #5d430e!important;
+      }
+      .MuiButton-containedSecondary span {
+        font-weight: bold;
+
+      }
       </style>
     <!--
       manifest.json provides metadata used when your web app is installed on a
