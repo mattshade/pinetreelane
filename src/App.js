@@ -45,7 +45,7 @@ export default function App() {
         <Typography component="h3" variant="h6">
           If yes please fill out the form below so we can determine if there is enough interest. Thank you!
         </Typography>
-        <form name="interestForm" data-netlify="true" method="POST" className={classes.form} noValidate>
+        <form name="interestForm" data-netlify="true" method="POST" className={classes.form}>
           <Grid container spacing={2}>
             <Grid item xs={12} sm={6}>
               <TextField
