@@ -81,6 +81,7 @@ export default function App() {
                 id="people"
                 label="Guests"
                 type="number"
+                name="numGuests"
                 
               />
             </Grid>
