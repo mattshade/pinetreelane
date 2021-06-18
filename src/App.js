@@ -39,9 +39,6 @@ export default function App() {
     <Container className="App" component="main" maxWidth="xs">
       <CssBaseline />
       <div className={classes.paper}>
-        {/* <Avatar className={classes.avatar}>
-          <LockOutlinedIcon />
-        </Avatar> */}
         <Typography component="h1" variant="h5, bold, color:green">
           Would you and your family like to join for a block party located in the cul-de-sac at the end of Pinetree Lane for $50 per family?
         </Typography>
