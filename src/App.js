@@ -24,6 +24,8 @@ const useStyles = makeStyles((theme) => ({
   },
   submit: {
     margin: theme.spacing(3, 0, 2),
+    fontWeight: 900,
+    fontSize: '1.2em',
   },
   textfield: {
     background: 'rgba(255, 255, 255, 0.80);',
@@ -106,7 +108,7 @@ export default function App() {
             color="primary"
             className={classes.submit}
           >
-            I'm interested
+            I'm interested!
           </Button>
         </form>
         <input type="hidden" name="form-name" value="interested" />
