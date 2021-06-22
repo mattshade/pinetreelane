@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import TextField from '@material-ui/core/TextField';
@@ -6,7 +6,6 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -45,7 +44,9 @@ export default function App() {
         <Typography component="h3" variant="h6">
           If yes please fill out the form below so we can determine if there is enough interest. Thank you!
         </Typography>
-        <form name="interestForm" data-netlify="true" method="POST" className={classes.form}>
+        
+        <form name="interested" method="post">
+          <input type="hidden" name="form-name" value="contact" />
           <Grid container spacing={2}>
             <Grid item xs={12} sm={6}>
               <TextField
@@ -57,7 +58,6 @@ export default function App() {
                 fullWidth
                 id="firstName"
                 label="First Name"
-                autoFocus
               />
             </Grid>
             <Grid item xs={12} sm={6}>
@@ -108,6 +108,7 @@ export default function App() {
             I'm interested
           </Button>
         </form>
+        <input type="hidden" name="form-name" value="interested" />
       </div>
       {/* <Box mt={5}>
         <Copyright />
