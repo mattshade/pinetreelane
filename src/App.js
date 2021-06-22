@@ -1,5 +1,4 @@
 import React from "react";
-import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import TextField from '@material-ui/core/TextField';
 import Grid from '@material-ui/core/Grid';
@@ -98,7 +97,7 @@ export default function App() {
               />
             </Grid>
           </Grid>
-          <Button
+          <input
             type="submit"
             fullWidth
             variant="contained"
@@ -106,7 +105,7 @@ export default function App() {
             className={classes.submit}
           >
             I'm interested
-          </Button>
+          </input>
         </form>
         <input type="hidden" name="form-name" value="interested" />
       </div>
