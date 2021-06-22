@@ -45,7 +45,7 @@ export default function App() {
           If yes please fill out the form below so we can determine if there is enough interest. Thank you!
         </Typography>
         
-        <form name="interested" method="post">
+        <form name="interested" method="post" netlify netlify-honeypot="bot-field" hidden>
           <input type="hidden" name="form-name" value="interested" />
           <Grid container spacing={2}>
             <Grid item xs={12} sm={6}>
@@ -98,7 +98,7 @@ export default function App() {
               />
             </Grid>
           </Grid>
-          <Button
+          <input
             type="submit"
             fullWidth
             variant="contained"
@@ -106,7 +106,7 @@ export default function App() {
             className={classes.submit}
           >
             I'm interested
-          </Button>
+          </input>
         </form>
         <input type="hidden" name="form-name" value="interested" />
       </div>
