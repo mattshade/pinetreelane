@@ -50,6 +50,60 @@
     <title>React App</title>
   </head>
   <body>
+    <form name="interested" netlify netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="interested" />
+          <input
+            className={classes.textfield}
+            autoComplete="fname"
+            name="firstName"
+            variant="outlined"
+            required
+            fullWidth
+            id="firstName"
+            label="First Name"
+          />
+          <input
+            className={classes.textfield}
+            variant="outlined"
+            required
+            fullWidth
+            id="lastName"
+            label="Last Name"
+            name="lastName"
+            autoComplete="lname"
+          />
+          <input
+            className={classes.textfield}
+            variant="outlined"
+            required
+            fullWidth
+            id="people"
+            label="Guests"
+            type="number"
+            name="numGuests"
+            
+          />
+        
+          <input
+            className={classes.textfield}
+            variant="outlined"
+            required
+            fullWidth
+            id="email"
+            label="Email Address"
+            name="email"
+            autoComplete="email"
+          />
+      <input
+        type="submit"
+        fullWidth
+        variant="contained"
+        color="primary"
+        className={classes.submit}
+      >
+        I'm interested
+    </input>
+    </form>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
