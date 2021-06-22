@@ -41,10 +41,11 @@ export default function App() {
         <Typography component="h1" variant="h5, bold, color:green">
           Would you and your family like to join for a block party located in the cul-de-sac at the end of Pinetree Lane for $50 per family?
         </Typography>
+        <br />
         <Typography component="h3" variant="h6">
-          If yes please fill out the form below so we can determine if there is enough interest. <strong>Thank you!</strong>
+          If yes please fill out the form below so we can determine if there is enough interest. <br /><strong>Thank you!</strong>
         </Typography>
-        <br/>
+        <br />
         <form name="interested" method="post">
         <input type="hidden" name="form-name" value="interested" />
           <Grid container spacing={2}>
