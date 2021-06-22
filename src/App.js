@@ -98,7 +98,7 @@ export default function App() {
               />
             </Grid>
           </Grid>
-          <input
+          <Button
             type="submit"
             fullWidth
             variant="contained"
@@ -106,7 +106,7 @@ export default function App() {
             className={classes.submit}
           >
             I'm interested
-          </input>
+          </Button>
         </form>
         <input type="hidden" name="form-name" value="interested" />
       </div>
